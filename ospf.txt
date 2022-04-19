@@ -1,0 +1,20 @@
+
+The following Command is for setting the OSPF configuration for router0
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.1.0 0.255.255.255 area 1
+Router(config-router)#network 192.168.2.0 0.255.255.255 area 1
+Router(config-router)#exit
+Router(config)#exit
+Router#
+
+
+The following Command is for setting the OSPF configuration for router1
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.2.0 0.255.255.255 area 1
+Router(config-router)#network 192.168.3.0 0.255.255.255 area 1
+Router(config-router)#exit
+Router(config)#exit
+Router#
+
+
+ping the pc0 from pc 1 using ping ipaddress using cmd
